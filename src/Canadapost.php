@@ -44,8 +44,7 @@ class Canadapost{
         $curl = curl_init($this->service_url.$this->endpoint); // Create REST Request
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
-        //curl_setopt($curl, CURLOPT_CAINFO, realpath(dirname($_SERVER['SCRIPT_FILENAME'])) . '/../../../third-party/cert/cacert.pem');
-        curl_setopt($curl, CURLOPT_POST, true);
+	curl_setopt($curl, CURLOPT_POST, true);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $xmlRequest);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
