@@ -1,6 +1,7 @@
 <?php
 namespace Canadapost;
 use Canadapost\Rates;
+
 class Canadapost{
     /**
 	 * @var username string
