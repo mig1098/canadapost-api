@@ -1,5 +1,5 @@
-# canadapost-api
-candapost php api
+## canadapost-api
+###candapost php api
 
 sample get rates:
 ```php
